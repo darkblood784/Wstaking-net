@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <g filter="url(#filter0_di_0_3)">
+    <mask id="mask0_0_3" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="9" y="9" width="30" height="30">
+      <path d="M38.5 24C38.5 15.9919 32.0081 9.5 24 9.5C15.9919 9.5 9.5 15.9919 9.5 24C9.5 32.0081 15.9919 38.5 24 38.5C32.0081 38.5 38.5 32.0081 38.5 24Z" fill="white"/>
+    </mask>
+    <g mask="url(#mask0_0_3)">
+      <path d="M38.5 24C38.5 15.9919 32.0081 9.5 24 9.5C15.9919 9.5 9.5 15.9919 9.5 24C9.5 32.0081 15.9919 38.5 24 38.5C32.0081 38.5 38.5 32.0081 38.5 24Z" fill="white"/>
+      <!-- Saffron stripe -->
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 9.5H50.1V19.1667H9.5V9.5Z" fill="#FF9933"/>
+      <!-- White stripe -->
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 19.1667H50.1V28.8333H9.5V19.1667Z" fill="#FFFFFF"/>
+      <!-- Green stripe -->
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 28.8333H50.1V38.5H9.5V28.8333Z" fill="#138808"/>
+      <!-- Ashoka Chakra -->
+      <circle cx="24" cy="24" r="4" fill="#000080"/>
+      <path d="M24 20.5L24.7 23.3L27.5 24L24.7 24.7L24 27.5L23.3 24.7L20.5 24L23.3 23.3L24 20.5Z" fill="#000080"/>
+      <path d="M24 21.5L24.5 23.5L26.5 24L24.5 24.5L24 26.5L23.5 24.5L21.5 24L23.5 23.5L24 21.5Z" fill="#FFFFFF"/>
+    </g>
+  </g>
+  <defs>
+    <filter id="filter0_di_0_3" x="8.92857" y="8.92857" width="30.1429" height="34.1429" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset/>
+      <feGaussianBlur stdDeviation="0.285714"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.258824 0 0 0 0 0.278431 0 0 0 0 0.298039 0 0 0 0.32 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_3"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_3" result="shape"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="4.57143"/>
+      <feGaussianBlur stdDeviation="3.42857"/>
+      <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.258824 0 0 0 0 0.278431 0 0 0 0 0.298039 0 0 0 0.08 0"/>
+      <feBlend mode="normal" in2="shape" result="effect2_innerShadow_0_3"/>
+    </filter>
+  </defs>
+</svg>

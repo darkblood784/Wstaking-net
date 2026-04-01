@@ -1,0 +1,44 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.preprod
+.env.prod
+
+# Credentials
+*.pem
+*.key
+*.crt
+firebase-admin.json
+firebase-service-account.json
+*-firebase-adminsdk-*.json
+credentials.json
+secrets.json
+private_key
+
+# Build output
+dist/
+build/
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs and temp
+logs/
+*.log
+.cache/
+
+# Database
+.data/
+*.db
+*.sqlite3
+
+# Old files
+_old-staking-frontend/
+.audit_docx_unpacked/
+local_backup_*
+
+.DS_Store
+Thumbs.db
