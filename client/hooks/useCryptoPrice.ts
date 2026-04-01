@@ -142,7 +142,7 @@ const useCryptoPrice = (isConnected: boolean, selectedToken: SupportedToken) => 
 				const cachedPrice = getCachedPrice(tokenConfig.coingeckoId);
 				if (cachedPrice !== null) {
 					setCryptoPrice(cachedPrice); // 使用緩存的價格
-					console.log(`使用緩存價格: ${selectedToken}, 價格: ${cachedPrice}`);
+					if (import.meta.env.DEV) console.log(`Using cached price for ${selectedToken}`);
 					setIsLoadingPrice(false); // 設置加載狀態為 false
 					return; // 結束函數，避免發起新的 API 請求
 				}
@@ -170,7 +170,7 @@ const useCryptoPrice = (isConnected: boolean, selectedToken: SupportedToken) => 
 
 				setCryptoPrice(price); // 更新資產價格狀態
 				setCachedPrice(tokenConfig.coingeckoId, price); // 將獲取到的價格存入緩存
-				console.log(`初始價格載入成功: ${selectedToken}, 價格: ${price}`);
+				if (import.meta.env.DEV) console.log(`Price loaded successfully for ${selectedToken}`);
 			} catch (error) {
 				console.error("初始價格載入失敗:", error);
 				setCryptoPrice(null); // 發生錯誤時設置價格為 null

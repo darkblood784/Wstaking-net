@@ -22,15 +22,12 @@ import { SelectedTokenContextProvider } from "@/contexts/SelectedTokenContext";
 import { UserDetailsContextProvider } from "@/contexts/UserDetailsContext";
 import { SystemDetailsProvider } from "@/contexts/SystemDetailsContext";
 import WalletConnectLogger from "@/components/WalletConnectLogger";
-import ReferralBindingLogger from "@/components/ReferralBindingLogger";
-import { captureReferralCode } from "@/utils/referralCapture";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Admin from "./pages/Admin";
 import Version from "./pages/Version";
 import FAQ from "./pages/FAQ";
 import WhitePaper from "./pages/WhitePaper";
-import Referral from "./pages/Referral";
 
 const queryClient = new QueryClient();
 
@@ -57,10 +54,6 @@ const App = () => {
     }, [location]);
     return null;
   };
-
-  useEffect(() => {
-    void captureReferralCode();
-  }, []);
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -149,14 +142,12 @@ const App = () => {
                           >
                             <ScrollToHash />
                             <WalletConnectLogger />
-                            <ReferralBindingLogger />
                             <Routes>
                               <Route path="/" element={<Index />} />
                               <Route path="/admin" element={<Admin />} />
                               <Route path="/faq" element={<FAQ />} />
                               <Route path="/white-paper" element={<WhitePaper />} />
                               <Route path="/version" element={<Version />} />
-                              <Route path="/referral" element={<Referral />} />
                               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                               <Route path="*" element={<NotFound />} />
                             </Routes>

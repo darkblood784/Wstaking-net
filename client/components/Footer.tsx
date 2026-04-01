@@ -145,14 +145,6 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="/referral"
-                  className="text-[#BDBDBD] hover:text-ws-green transition-colors text-base md:text-lg"
-                >
-                  {t("footer.referralProgram", { defaultValue: "Referral Program" })}
-                </a>
-              </li>
-              <li>
-                <a
                   href="/faq"
                   className="text-[#BDBDBD] hover:text-ws-green transition-colors text-base md:text-lg"
                 >

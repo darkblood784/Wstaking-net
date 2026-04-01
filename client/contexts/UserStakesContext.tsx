@@ -135,8 +135,8 @@ export const UserStakesProvider: React.FC<{ children: React.ReactNode }> = ({ ch
             }
         }
         if (import.meta.env.DEV) {
-            console.log("Fetch user stakes params:", userAddress, tokenAddress);
-            console.log("Fetched all user stakes:", allUserStakes);
+            console.log("Fetch user stakes for token:", selectedToken.symbol);
+            console.log("Fetched stakes count:", allUserStakes.length);
         }
         if (fetchId !== latestFetchIdRef.current) {
             return;

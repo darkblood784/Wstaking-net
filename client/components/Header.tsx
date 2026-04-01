@@ -350,13 +350,6 @@ export function Header({
                 >
                   {t("nav.faq")}
                 </Link>
-                <Link
-                  to="/referral"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="rounded-xl border border-white/10 bg-white/[0.03] px-3 py-2.5 text-sm text-white/90 hover:border-ws-green hover:text-white transition-colors"
-                >
-                  {t("nav.referral", { defaultValue: "Referral" })}
-                </Link>
               </div>
             </div>
 

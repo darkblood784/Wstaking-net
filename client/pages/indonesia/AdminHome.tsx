@@ -7,8 +7,6 @@ import DataPanel from "@/components/indonesia/admin/DataPanel";
 import { SupportedToken } from "@/configs/tokenConfigs";
 import WalletSummaryPanel from "@/components/indonesia/admin/WalletSummaryPanel";
 import TransactionDataPanel from "@/components/indonesia/admin/TransactionDataPanel";
-import ReferralClaimsPanel from "@/components/indonesia/admin/ReferralClaimsPanel";
-import ReferralCodePolicyPanel from "@/components/indonesia/admin/ReferralCodePolicyPanel";
 
 const SECTION_TITLE_SX = {
 	fontSize: { xs: 24, sm: 32, md: 42, lg: 48 },
@@ -66,22 +64,10 @@ const AdminHome: React.FC = () => {
 				<WalletSummaryPanel />
 
 				<Typography sx={SECTION_TITLE_SX}>
-					Referral Code Management
-				</Typography>
-
-				<ReferralCodePolicyPanel />
-
-				<Typography sx={SECTION_TITLE_SX}>
 					Transaction Data
 				</Typography>
 
 				<TransactionDataPanel />
-
-				<Typography sx={SECTION_TITLE_SX}>
-					Referral Claims
-				</Typography>
-
-				<ReferralClaimsPanel />
 			</Box>
 		</Container>
 	);
